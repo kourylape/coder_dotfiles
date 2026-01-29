@@ -13,4 +13,4 @@ if ! command -v chezmoi &> /dev/null; then
 fi
 
 # Apply dotfiles and scripts from the repo
-chezmoi init --source="$DOTFILES_DIR" --apply --dry-run --verbose
+~/.local/share/bin/chezmoi init --source="$DOTFILES_DIR" --apply --dry-run --verbose
