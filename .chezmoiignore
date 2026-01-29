@@ -1,0 +1,7 @@
+# Project Files
+.gitignore
+README.md
+setup.sh
+
+# Dotfiles to be excluded
+# TODO
