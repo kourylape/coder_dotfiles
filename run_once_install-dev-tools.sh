@@ -40,3 +40,19 @@ if [ ! -f "$HOME/.local/bin/asdf" ]; then
 else
   echo "asdf already installed"
 fi
+
+# setup bat symlink
+if command -v batcat >/dev/null 2>&1 && [ ! -f "$HOME/.local/bin/bat" ]; then
+  echo "Setting up symlink for bat..."
+  mkdir -p ~/.local/bin
+  ln -s /usr/bin/batcat ~/.local/bin/bat
+else
+  echo "bat symlink already set up or batcat not installed"
+fi
+
+# setup fd symlink
+if command -v fdfind >/dev/null 2>&1 && [ ! -f "$HOME/.local/bin/fd" ]; then
+  echo "Setting up symlink for fd..."
+  mkdir -p ~/.local/bin
+  ln -s /usr/bin/fdfind ~/.local/bin/fd
+fi
