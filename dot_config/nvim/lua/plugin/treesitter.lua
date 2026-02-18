@@ -1,6 +1,4 @@
-local treesitter = require("nvim-treesitter.configs")
-
-treesitter.setup({
+require("nvim-treesitter").setup({
   ensure_installed = {
     "bash",
     "c",
@@ -24,18 +22,11 @@ treesitter.setup({
     "vue",
     "yaml",
   },
-  context_commentstring = {
-    enable = true,
-    enable_autocmd = false,
-  },
   highlight = {
     enable = true,
     disable = { "vim", "vimdoc", "markdown" },
   },
   indent = {
-    enable = true,
-  },
-  endwise = {
     enable = true,
   },
 })
