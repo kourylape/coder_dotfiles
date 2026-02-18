@@ -1,0 +1,12 @@
+require("lualine").setup({
+  extensions = { "nvim-tree", "fugitive" },
+  options = {
+    icons_enabled = true,
+    theme = "auto",
+    component_separators = { left = "", right = "" },
+    section_separators = { left = "", right = "" },
+  },
+  sections = {
+    lualine_x = { "filetype" },
+  },
+})
