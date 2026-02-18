@@ -27,4 +27,5 @@ sudo apt install -y \
   ripgrep \
   gpg \
   tmux \
-  eza
+  eza \
+  fd-find
