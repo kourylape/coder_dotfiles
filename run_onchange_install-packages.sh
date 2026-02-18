@@ -9,7 +9,7 @@ if ! [ -f /etc/apt/keyrings/gierens.gpg ]; then
 fi
 
 # fastfetch
-sudo add-apt-repository ppa:zhangsongcui3371/fastfetch
+sudo add-apt-repository -y ppa:zhangsongcui3371/fastfetch
 
 sudo apt update
 
@@ -22,4 +22,5 @@ sudo apt install -y \
   bat \
   ripgrep \
   gpg \
-  tmux
+  tmux \
+  eza
